@@ -61,7 +61,7 @@ export default function Navbar() {
             <nav className="navbar navbar-expand-lg">
                <a
                   className="navbar-brand NavLogo logoSetScreen"
-                  href="#"
+                  href="/"
                   onClick={(e) => {
                      e.preventDefault();
                      scrollToSection("topcasual");
