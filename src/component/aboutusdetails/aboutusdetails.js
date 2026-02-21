@@ -40,7 +40,7 @@ export default function aboutusdetails() {
                                 </div>
 
                                 <div className="buttonSection">
-                                    <a href="https://drive.google.com/file/d/14yB-PUkplK8hDkrDf0KjmGj3-H1bJdoJ/view?usp=sharing" target="_blank">
+                                    <a href="https://drive.google.com/file/d/14yB-PUkplK8hDkrDf0KjmGj3-H1bJdoJ/view?usp=sharing" rel="noreferrer" target="_blank">
                                         Get My Resume <i className="fas fa-arrow-up"></i>
                                         <div className="ButtonBar"></div>
                                     </a>
@@ -48,7 +48,7 @@ export default function aboutusdetails() {
                             </div>
                             <div className="col-lg-6">
                                 <div className="myImage">
-                                    <img src={aboutmyImage} alt="Harsh Lalwala About Image" className="img-fluid" />
+                                    <img src={aboutmyImage} alt="Harsh Lalwala About" className="img-fluid" />
                                 </div>
                             </div>
                         </div>

@@ -37,7 +37,7 @@ export default function carousel() {
                                     </div>
                                 </div>
                                 <div className="mainHero">
-                                    <img src={removeBg} className="img-fluid" loading="lazy" alt="Harsh Lalwala Doodle Image" />
+                                    <img src={removeBg} className="img-fluid" loading="lazy" alt="Harsh Lalwala Doodle" />
                                     {/* <img src="https://cdn.prod.website-files.com/66b896e52c6bdb116734267e/66bc51a5c08ca51ab9bd0a94_Intro%20Portrait.png"/> */}
                                 </div>
                                 {/* <p className="Mysignature">Harsh Lalwala</p> */}

@@ -12,16 +12,16 @@ export default function aboutus() {
                                     <p>Available for Work</p>
                                     <div className="social-profile-divider"></div>
                                     <div className="social-icons-list">
-                                        <a href="https://www.linkedin.com/in/harsh-lalwala/" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                                        <a href="https://www.linkedin.com/in/harsh-lalwala/" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="LinkedIn" rel="noreferrer">
                                             <p className="social-icon-list-text">LN</p>
                                         </a>
-                                        <a href="https://wa.me/+919904929807" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="Whatsapp">
+                                        <a href="https://wa.me/+919904929807" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="Whatsapp" rel="noreferrer">
                                             <p className="social-icon-list-text">WA</p>
                                         </a>
-                                        <a href="https://www.instagram.com/iamharshlalwala4950/" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                        <a href="https://www.instagram.com/iamharshlalwala4950/" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="Instagram" rel="noreferrer">
                                             <p className="social-icon-list-text">IG</p>
                                         </a>
-                                        <a href="https://www.facebook.com/profile.php?id=100011258599105" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                        <a href="https://www.facebook.com/profile.php?id=100011258599105" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="Facebook" rel="noreferrer">
                                             <p className="social-icon-list-text">FB</p>
                                         </a>
                                     </div>

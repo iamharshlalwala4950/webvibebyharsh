@@ -87,7 +87,7 @@ export default function Navbar() {
             {/* Full Navbar */}
             <div className={`fullNavBar ${isOpen ? "open" : ""}`}>
 
-               <a
+               <a href="/"
                   className="menuItem"
                   onClick={() => scrollToSection("topcasual")}
                >
@@ -97,7 +97,7 @@ export default function Navbar() {
                   </div>
                </a>
 
-               <a
+               <a href="/"
                   className="menuItem"
                   onClick={() => scrollToSection("aboutME")}
                >
@@ -107,7 +107,7 @@ export default function Navbar() {
                   </div>
                </a>
 
-               <a
+               <a href="/"
                   className="menuItem"
                   onClick={() => scrollToSection("serviceME")}
                >
@@ -117,7 +117,7 @@ export default function Navbar() {
                   </div>
                </a>
 
-               <a
+               <a href="/"
                   className="menuItem"
                   onClick={() => scrollToSection("workMe")}
                >
@@ -127,7 +127,7 @@ export default function Navbar() {
                   </div>
                </a>
 
-               <a
+               <a href="/"
                   className="menuItem"
                   onClick={() => scrollToSection("ContactUs")}
                >
