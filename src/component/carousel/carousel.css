@@ -1,0 +1,116 @@
+.home-hero {
+    position: relative;
+}
+
+.home-hero::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 500px;
+    z-index: 93;
+    bottom: -2px;
+    background: linear-gradient(360deg, rgba(0, 10, 11, 0.996) 0%, rgba(9, 9, 121, 0) 61%);
+}
+
+.home-hero .carousel-item {
+    position: relative;
+}
+
+.home-hero .carousel-item::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background: rgb(17, 17, 17);
+}
+
+.home-hero .carousel-item img.sliderImg {
+    height: 100%;
+    width: 100%;
+}
+
+.home-hero .carousel-item .carousel-caption {
+    height: fit-content;
+    min-width: 100%;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -40%);
+    padding: 0;
+    margin: 0;
+}
+
+.hero-intro-subtitle-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.tagLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(23, 23, 23);
+    min-width: 850px;
+    margin-bottom: 80px;
+    border-radius: 50px;
+    padding: 18px 28px;
+}
+
+.intro-subtitle-line.leftBorder {
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 255, 255));
+}
+
+.intro-subtitle-line.rightBorder {
+    background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(255, 255, 255));
+}
+
+.intro-subtitle-line {
+    background-image: linear-gradient(-90deg, rgb(0, 0, 0), rgb(255, 255, 255));
+    width: 25px;
+    height: 2px;
+}
+
+.home-hero-subtitle {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #d0d0d0;
+    line-height: 1.8;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.home-hero-subtitle i {
+    margin-left: 5px;
+}
+
+.BigLetter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.BigLetter .singles {
+    font-size: 146px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.mainHero {
+    position: absolute;
+    z-index: 91;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 00px;
+}
+
+.mainHero img {
+    max-height: 500px;
+}

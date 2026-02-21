@@ -1,0 +1,216 @@
+@media (min-width: 320px) and (max-width: 575px) {
+    .social-profile-divider, .circle-link-separator {
+        display: none;
+    }
+
+    .mysocials {
+        justify-content: center;
+        gap: 10px;
+    }
+    .home-hero-subtitle{
+        line-height: 1.3;
+    }
+    .testimonialDiv {
+        padding: 25px;
+    }
+    .menuItem {
+        padding: 5px 0px !important;
+    }
+    .fullNavBar{
+        padding-top: 10px;
+    }
+    .section-gap {
+        padding: 50px 0 !important;
+    }
+
+    .myLanguage .col-xs-6:last-child .languageContainer {
+        margin-bottom: 0px;
+    }
+
+    .myLanguage {
+        padding-bottom: 50px;
+    }
+    .menuItem .menuItemInner p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .section-gap {
+        padding: 70px 0;
+    }
+
+    .home-hero::before {
+        height: 200px;
+    }
+
+    .intro-subtitle-line.leftBorder {
+        margin-right: 10px
+    }
+
+    .tagLine {
+        min-width: fit-content;
+    }
+
+    .BigLetter .singles {
+        font-size: 96px;
+    }
+
+    .ServiceAccordian .card-header div button {
+        font-size: 22px !important;
+    }
+
+    .ServiceAccordian .card .card-body p {
+        padding: 0px 10px !important;
+    }
+
+    .projectDetails h3 {
+        font-size: 36px !important;
+    }
+
+    .ProjectCard .ButtonBar {
+        max-width: 158px;
+    }
+
+    .ButtonBar {
+        max-width: 185px;
+    }
+    .buttonSection a{
+        font-size: 20px;
+    }
+
+    .ProjectCard {
+        position: inherit !important;
+        top: 0 !important;
+        margin-bottom: 50px !important;
+    }
+
+    .ProjectCard {
+        padding: 25px 10px !important;
+    }
+    .ManiHeader .navbar {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+    .process .ImageItem img {
+        display: none;
+    }
+    .individualSkill:last-child{
+        margin-bottom: 25px;
+    }
+
+    .headingSection h1, h2 {
+        font-size: 36px !important;
+    }
+
+    .headingSection {
+        margin-bottom: 25px !important;
+    }
+
+    .websiteSignature {
+        border-top: 1px solid #a3a3a34d;
+        padding-top: 25px;
+    }
+
+    .menuItem .menuItemInner p {
+        margin: 0;
+        font-size: 26px;
+    }
+
+    .menuItem {
+        padding: 10px 15px;
+    }
+
+        .menuItem:hover {
+            margin-left: 15px;
+        }
+
+    .websiteSignature p {
+        text-align: center;
+    }
+
+    .aboutusSection {
+        padding: 50px 0 0px 0 !important;
+    }
+
+    .row {
+        margin: 0 !important;
+    }
+
+    .singles.MobileVer {
+        display: none;
+    }
+
+    p, .inner-testimonial p, .inner-testimonial h2, .mysocials a, .testimonialDiv .fa, .testimonialDiv .fas {
+        font-size: 18px !important;
+    }
+
+    .mycontent p {
+        font-size: 24px !important
+    }
+
+    .home-hero .carousel-item img.sliderImg {
+        height: 720px;
+        width: 100%;
+    }
+
+    .myImage, .projectDetails {
+        margin-top: 50px !important;
+    }
+
+    .section-gap1 {
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 400px) {
+    .headingSection h1, h2, .individualSkill h4 {
+        font-size: 28px !important;
+    }
+
+    .individualSkill label {
+        font-size: 18px !important;
+    }
+    .inner-testimonial h2{
+        font-size: 18px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-gap {
+        padding: 70px 0;
+    }
+
+    .projectImage img {
+        max-height: 550px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home-hero .carousel-item img.sliderImg {
+        height: 1000px;
+    }
+
+    .BigLetter .singles {
+        font-size: 108px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .WrapperContainer {
+        max-width: 1250px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1399px) {
+}
+
+@media (max-width: 1399px) {
+}

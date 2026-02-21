@@ -1,0 +1,145 @@
+.bioSection {
+    background-image: url('../../assets/images/vector/slidervector.png');
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+}
+
+.bioSection::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    bottom: 0px;
+    background: linear-gradient(360deg, rgba(0, 10, 11, 0.996) 0%, rgba(9, 9, 121, 0) 61%);
+}
+
+.mainPara {
+    margin-bottom: 30px;
+}
+
+.buttonSection a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    max-width: 210px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttonSection a i {
+    margin-left: 10px;
+    transform: translate3d(0px, 0px, 0px) rotate(45deg);
+    color: #fb4e4e;
+    position: absolute;
+    top: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttonSection a:hover {
+    color: #fb4e4e;
+    transition: 0.3s ease-in-out;
+}
+
+.buttonSection a:hover i {
+    transform: translate3d(3px, -5px, 0px) rotate(45deg);
+    transition: 0.3s ease-in-out;
+}
+
+.buttonSection a:hover .ButtonBar::before {
+    width: 200px;
+    transition: 0.3s ease-in-out;
+}
+
+.ButtonBar {
+    height: 1px;
+    color: #fff;
+    background: #fff;
+    max-width: 200px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.ButtonBar::before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 0px;
+    top: 0;
+    left: 0;
+    background: #fb4e4e;
+    transition: 0.3s ease-in-out;
+}
+
+.myImage {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 100px;
+}
+
+.myImage img {
+    border-radius: 20px;
+    max-height: 450px;
+}
+
+.individualSkill {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    max-width: fit-content;
+    padding: 20px 0;
+    transition: max-width 1s;
+    display: flex;
+    position: relative;
+    margin: auto auto 50px auto;
+}
+
+.individualSkill label,
+.individualSkill h4 {
+    margin: 0;
+}
+
+.individualSkill label {
+    color: #d0d0d0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    font-size: 22px;
+    transition: 0.5s ease-in-out;
+}
+
+.individualSkill h4 {
+    font-size: 34px;
+    color: #d0d0d0;
+    transition: 0.5s ease-in-out;
+}
+
+.skillsBar {
+    height: 1px;
+    color: #d0d0d0;
+    background: #d0d0d0;
+    width: 500px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.individualSkill:hover .skillsBar {
+    width: 800px;
+}
+
+.individualSkill:hover label {
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.individualSkill:hover h4 {
+    color: #fb4e4e;
+    transition: 0.5s ease-in-out;
+}

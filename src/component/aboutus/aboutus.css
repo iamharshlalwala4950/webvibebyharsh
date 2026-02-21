@@ -1,0 +1,142 @@
+.aboutusSection {
+    padding: 100px 0 50px 0;
+}
+
+
+.SocialPara {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+    .SocialPara p {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1;
+        margin: 0;
+    }
+
+.social-icon-list-text {
+    font-size: 20px !important;
+}
+
+.social-profile-divider {
+    background-image: linear-gradient(180deg, #000a0b, white 50%, #000a0b 103%);
+    width: 2.5px;
+    height: 35px;
+}
+
+.social-icons-list {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+}
+
+.social-icon-list-item {
+    border: 1px solid #fff;
+    font-weight: 600;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    text-decoration: none;
+    transition: background-color .3s, color .3s;
+    display: flex;
+}
+
+    .social-icon-list-item:hover {
+        background: #fff;
+        border: 1px solid #000a0b;
+        color: #000a0b;
+    }
+
+        .social-icon-list-item:hover p {
+            color: #000a0b;
+        }
+
+
+.mycontent p {
+    font-size: 32px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.myUSP {
+    margin: 25px
+}
+
+    .myUSP ul {
+        display: flex;
+        background-color: #0d1617;
+        border-radius: 50px;
+        overflow: hidden;
+        max-width: 600px;
+        margin: auto;
+        padding: 10px 20px;
+    }
+
+    .myUSP li {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        animation: marquee 10s linear infinite;
+        min-width: 210px;
+        justify-content: center;
+        letter-spacing: 1px;
+    }
+
+    .myUSP:hover li {
+        animation-play-state: paused;
+    }
+
+/*@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-130% - 20px));
+    }
+}*/
+@keyframes marquee {
+    from {
+        transform: translateX(00%);
+    }
+
+    to {
+        transform: translateX(-250%);
+    }
+}
+
+.myUSP li.Orange {
+    color: #F4AC2C;
+}
+
+.myUSP li.Blue {
+    color: #5BC0EB;
+}
+
+.myUSP li.Green {
+    color: #6BF178;
+}
+
+.myUSP li.Red {
+    color: #E94F37;
+}
+
+.myUSP li.Yellow {
+    color: #F9D342;
+}
+
+.myUSP li i {
+    margin-right: 15px;
+    font-size: 8px;
+}
