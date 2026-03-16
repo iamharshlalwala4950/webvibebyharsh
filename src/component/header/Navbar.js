@@ -16,7 +16,7 @@ export default function Navbar() {
       setIsOpen(false);
    };
 
-   // 🔥 Smooth Scroll With Header Offset
+   // Smooth Scroll With Header Offset
    const scrollToSection = (id) => {
 
       const element = document.getElementById(id);
