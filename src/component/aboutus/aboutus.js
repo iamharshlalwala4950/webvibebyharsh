@@ -28,7 +28,7 @@ export default function aboutus() {
                                 </div>
                                 <div className="mycontent">
                                     <p>
-                                        Hi, I’m Harsh Lalwala, a <span>Front-End Developer with 5+ years of experience</span> building responsive, user-friendly websites. I specialize in converting ideas into clean, functional, and SEO-ready websites that help businesses grow and create strong online presence.
+                                        Hi, I’m Harsh Lalwala, a <span>Front-End Developer with 4+ years of experience</span> building responsive, user-friendly websites. I specialize in converting ideas into clean, functional, and SEO-ready websites that help businesses grow and create strong online presence.
                                     </p>
                                 </div>
                                 <div className="myUSP">

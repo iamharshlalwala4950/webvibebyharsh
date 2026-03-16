@@ -8,6 +8,7 @@ import Aboutusdetails from './component/aboutusdetails/aboutusdetails';
 import Myproject from './component/myprojects/myproject';
 import MySkills from './component/myskills/skill';
 import Testimonials from './component/testimonials/testimonials';
+import Individualskills from './component/individualskills/individualskills'
 
 function App() {
    return (
@@ -17,6 +18,7 @@ function App() {
          <Aboutus />
          <Service />
          <Aboutusdetails />
+         <Individualskills />
          <Myproject />
          <MySkills />
          <Testimonials />
