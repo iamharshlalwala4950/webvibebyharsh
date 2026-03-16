@@ -36,27 +36,26 @@ export default function skill() {
             SkillImage: js,
             alt: "JavaScript",
         },
-        
         {
-            id: 6,
+            id: 5,
             title: "Bootstrap",
             SkillImage: bootstrap,
             alt: "Bootstrap",
         },
         {
-            id: 7,
+            id: 6,
             title: "ASP.NET",
             SkillImage: aspnet,
             alt: "ASP.NET",
         },
         {
-            id: 8,
+            id: 7,
             title: "Basic SEO",
             SkillImage: seo,
             alt: "Basic SEO",
         },
         {
-            id: 9,
+            id: 8,
             title: "Google Analytics",
             SkillImage: googleanalytics,
             alt: "Google Analytics",
