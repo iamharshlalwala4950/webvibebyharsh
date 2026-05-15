@@ -69,7 +69,7 @@ export default function Footer() {
                                     <div className="circle-link-separator"></div>
 
                                     <a
-                                        href="https://www.instagram.com/iamharshlalwala4950/"
+                                        href="https://www.instagram.com/iamharshlalwala/"
                                         target="_blank"
                                         rel="noreferrer"
                                     >

@@ -22,15 +22,20 @@
 }
 
 /* Swiper Navigation Custom */
-.swiper-button-prev,
-.swiper-button-next {
+.testimonialDiv .swiper-button-prev,
+.testimonialDiv .swiper-button-next {
     color: #fff;
 }
 
-.swiper-pagination-bullet {
+.testimonialDiv .swiper-pagination-bullet {
     background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    transition: 0.3s ease;
 }
 
-.swiper-pagination-bullet-active {
+.testimonialDiv .swiper-pagination-bullet-active {
     background: #ffcc00;
+    width: 35px;
 }

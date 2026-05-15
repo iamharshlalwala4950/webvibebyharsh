@@ -18,7 +18,7 @@ export default function aboutus() {
                                         <a href="https://wa.me/+919904929807" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="Whatsapp" rel="noreferrer">
                                             <p className="social-icon-list-text">WA</p>
                                         </a>
-                                        <a href="https://www.instagram.com/iamharshlalwala4950/" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="Instagram" rel="noreferrer">
+                                        <a href="https://www.instagram.com/iamharshlalwala/" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="Instagram" rel="noreferrer">
                                             <p className="social-icon-list-text">IG</p>
                                         </a>
                                         <a href="https://www.facebook.com/profile.php?id=100011258599105" target="_blank" className="social-icon-list-item w-inline-block" data-toggle="tooltip" data-placement="top" title="Facebook" rel="noreferrer">

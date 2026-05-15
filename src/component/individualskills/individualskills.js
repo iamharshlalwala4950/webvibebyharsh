@@ -8,35 +8,35 @@ export default function individualskills() {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-12 headingSection text-center">
-                                <h2>Areas of Expertise</h2>
+                                <h2>Technical Expertise</h2>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-12 text-center">
                                 <div className="individualSkill">
-                                    <label>#Front-End Development</label>
-                                    <div className="skillsBar"></div>
-                                    <h4>95%</h4>
-                                </div>
-                                <div className="individualSkill">
-                                    <label>#Responsive Web Development</label>
+                                    <label>#React.js Development</label>
                                     <div className="skillsBar"></div>
                                     <h4>90%</h4>
                                 </div>
                                 <div className="individualSkill">
-                                    <label>#HTML / CSS / Bootstrap </label>
+                                    <label>#JavaScript (ES6+) / jQuery</label>
+                                    <div className="skillsBar"></div>
+                                    <h4>90%</h4>
+                                </div>
+                                <div className="individualSkill">
+                                    <label>#HTML5 / CSS3 / Bootstrap </label>
                                     <div className="skillsBar"></div>
                                     <h4>95%</h4>
                                 </div>
                                 <div className="individualSkill">
-                                    <label>#JavaScript & jQuery</label>
+                                    <label>#Responsive Web Design</label>
                                     <div className="skillsBar"></div>
-                                    <h4>85%</h4>
+                                    <h4>95%</h4>
                                 </div>
                                 <div className="individualSkill">
-                                    <label>#SEO Optimization</label>
+                                    <label>#Cross-Browser Compatibility</label>
                                     <div className="skillsBar"></div>
-                                    <h4>80%</h4>
+                                    <h4>90%</h4>
                                 </div>
                                 <div className="individualSkill">
                                     <label>#Performance Optimization</label>
@@ -44,7 +44,7 @@ export default function individualskills() {
                                     <h4>80%</h4>
                                 </div>
                                 <div className="individualSkill">
-                                    <label>#Google Analytics Setup</label>
+                                    <label>#SEO Best Practices</label>
                                     <div className="skillsBar"></div>
                                     <h4>75%</h4>
                                 </div>

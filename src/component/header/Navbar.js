@@ -50,13 +50,11 @@ export default function Navbar() {
    useEffect(() => {
 
       const handleScroll = () => {
-
          if (window.scrollY > 100) {
             setIsFixed(true);
          } else {
             setIsFixed(false);
          }
-
       };
 
       window.addEventListener("scroll", handleScroll);
@@ -144,7 +142,6 @@ export default function Navbar() {
                      <div className="service-item-overlay"></div>
                   </div>
                </div>
-
                <div
                   className="menuItem"
                   onClick={() => scrollToSection("ContactUs")}
@@ -154,12 +151,8 @@ export default function Navbar() {
                      <div className="service-item-overlay"></div>
                   </div>
                </div>
-
             </div>
-
          </div>
-
       </header>
-
    );
 }

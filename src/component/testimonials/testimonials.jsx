@@ -63,9 +63,7 @@ export default function Testimonials() {
                                         <h2>~ Simran Kaur, CEO, Blissful Bakes</h2>
                                     </div>
                                 </SwiperSlide>
-
                             </Swiper>
-
                         </div>
                     </div>
                 </div>
