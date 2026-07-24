@@ -4,7 +4,6 @@ import react from "../../assets/images/icons/react.png";
 import html5 from "../../assets/images/icons/html5.png";
 import css3 from "../../assets/images/icons/css3.png";
 import js from "../../assets/images/icons/js.png";
-import jquery from "../../assets/images/icons/jquery.png";
 import bootstrap from "../../assets/images/icons/bootstrap.png";
 import aspnet from "../../assets/images/icons/aspnet.png";
 import seo from "../../assets/images/icons/seo.png";

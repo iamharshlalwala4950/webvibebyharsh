@@ -4,8 +4,6 @@ import ISInstrutechSolution from "../../assets/images/projectsHome/IS.png";
 import Firesafeservices from "../../assets/images/projectsHome/firesafeservice.png";
 import onyxpigment from "../../assets/images/projectsHome/OnyxPigment.png";
 import BulkFlo from "../../assets/images/projectsHome/BulkFlo.png";
-import Fivora from "../../assets/images/projectsHome/Fivora.png";
-import Chabildas from "../../assets/images/projectsHome/Chabildas.png";
 import jogisafetech from "../../assets/images/projectsHome/jogisafetech2.png";
 import RJKapdaaz from "../../assets/images/projectsHome/RJKapdaaz.png";
 import atlanticHotel from "../../assets/images/projectsHome/atlanticHotel.png";
@@ -30,7 +28,7 @@ export default function myproject() {
             projectURL: "https://jogifiresafeservices.com/"
         },
         {
-            id: 1,
+            id: 3,
             projectIndustry: "Pigment Manufacturing Industry",
             projectName: "ONYX Pigment PVT. LTD.",
             projectCoverImage: onyxpigment,
@@ -38,29 +36,13 @@ export default function myproject() {
             projectURL: "https://onyxpigment.com/"
         },
         {
-            id: 2,
+            id: 4,
             projectIndustry: "Industrial Logistics & Chemical Equipment Industry",
             projectName: "Bulk Flo Agencies LLP",
             projectCoverImage: BulkFlo,
             projectDiscription: "A business-focused website developed for a company specializing in spare parts for ISO tanks used in global logistics and chemical transportation. The website clearly presents product offerings, industry expertise, and safety-focused solutions. Designed for performance, accessibility, and clarity, it supports compliance-driven industries and strengthens trust with global clients.",
             projectURL: "https://bulk-flo.com/"
         },
-        // {
-        //     id: 3,
-        //     projectIndustry: "FINANCIAL SERVICES INDUSTRY",
-        //     projectName: "Fivora Group",
-        //     projectCoverImage: Fivora,
-        //     projectDiscription: "A professional financial services website built to establish credibility and provide clear service information. Designed with a responsive layout, SEO-friendly structure, and fast performance to enhance user trust and online visibility.",
-        //     projectURL: "https://fivoragroup.in/"
-        // },
-        // {
-        //     id: 4,
-        //     projectIndustry: "TEXTILE INDUSTRY",
-        //     projectName: "Chhabildas Enterprise",
-        //     projectCoverImage: Chabildas,
-        //     projectDiscription: "A modern textile business website created to showcase product offerings with clarity and consistency. Built for responsiveness, smooth navigation, and SEO readiness to strengthen brand presence across devices.",
-        //     projectURL: "https://chhabildasenterprise.com/"
-        // },
         {
             id: 5,
             projectIndustry: "process safety Industry",
