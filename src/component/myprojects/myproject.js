@@ -1,5 +1,7 @@
 import React from 'react'
 import './myproject.css';
+import ISInstrutechSolution from "../../assets/images/projectsHome/IS.png";
+import Firesafeservices from "../../assets/images/projectsHome/firesafeservice.png";
 import onyxpigment from "../../assets/images/projectsHome/OnyxPigment.png";
 import BulkFlo from "../../assets/images/projectsHome/BulkFlo.png";
 import Fivora from "../../assets/images/projectsHome/Fivora.png";
@@ -11,6 +13,22 @@ import hotelroyal from "../../assets/images/projectsHome/hotelroyal.png";
 
 export default function myproject() {
     const projects = [
+        {
+            id: 1,
+            projectIndustry: "Process Instrumentation Industry",
+            projectName: "IS Instrutech Solution Pvt. Ltd.",
+            projectCoverImage: ISInstrutechSolution,
+            projectDiscription: "Developed a responsive corporate website for IS Instrutech Solution Pvt. Ltd., showcasing industrial automation, instrumentation products, engineering services, and project portfolios with an SEO-optimized architecture and user-friendly navigation",
+            projectURL: "https://instrutechsolution.com/"
+        },
+        {
+            id: 2,
+            projectIndustry: "Fire Protection Systems & Industrial Safety Solutions",
+            projectName: "Jogi Firesafe Service PVT. LTD",
+            projectCoverImage: Firesafeservices,
+            projectDiscription: "Developed a responsive corporate website for Jogi Firesafe Service Pvt. Ltd., showcasing fire protection systems, industrial safety solutions, and engineering services with a modern UI, SEO-friendly architecture, and an intuitive user experience.",
+            projectURL: "https://jogifiresafeservices.com/"
+        },
         {
             id: 1,
             projectIndustry: "Pigment Manufacturing Industry",
@@ -27,22 +45,22 @@ export default function myproject() {
             projectDiscription: "A business-focused website developed for a company specializing in spare parts for ISO tanks used in global logistics and chemical transportation. The website clearly presents product offerings, industry expertise, and safety-focused solutions. Designed for performance, accessibility, and clarity, it supports compliance-driven industries and strengthens trust with global clients.",
             projectURL: "https://bulk-flo.com/"
         },
-        {
-            id: 3,
-            projectIndustry: "FINANCIAL SERVICES INDUSTRY",
-            projectName: "Fivora Group",
-            projectCoverImage: Fivora,
-            projectDiscription: "A professional financial services website built to establish credibility and provide clear service information. Designed with a responsive layout, SEO-friendly structure, and fast performance to enhance user trust and online visibility.",
-            projectURL: "https://fivoragroup.in/"
-        },
-        {
-            id: 4,
-            projectIndustry: "TEXTILE INDUSTRY",
-            projectName: "Chhabildas Enterprise",
-            projectCoverImage: Chabildas,
-            projectDiscription: "A modern textile business website created to showcase product offerings with clarity and consistency. Built for responsiveness, smooth navigation, and SEO readiness to strengthen brand presence across devices.",
-            projectURL: "https://chhabildasenterprise.com/"
-        },
+        // {
+        //     id: 3,
+        //     projectIndustry: "FINANCIAL SERVICES INDUSTRY",
+        //     projectName: "Fivora Group",
+        //     projectCoverImage: Fivora,
+        //     projectDiscription: "A professional financial services website built to establish credibility and provide clear service information. Designed with a responsive layout, SEO-friendly structure, and fast performance to enhance user trust and online visibility.",
+        //     projectURL: "https://fivoragroup.in/"
+        // },
+        // {
+        //     id: 4,
+        //     projectIndustry: "TEXTILE INDUSTRY",
+        //     projectName: "Chhabildas Enterprise",
+        //     projectCoverImage: Chabildas,
+        //     projectDiscription: "A modern textile business website created to showcase product offerings with clarity and consistency. Built for responsiveness, smooth navigation, and SEO readiness to strengthen brand presence across devices.",
+        //     projectURL: "https://chhabildasenterprise.com/"
+        // },
         {
             id: 5,
             projectIndustry: "process safety Industry",

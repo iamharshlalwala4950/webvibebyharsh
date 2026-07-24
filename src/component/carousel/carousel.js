@@ -1,5 +1,5 @@
 import sliderVector from "../../assets/images/vector/slidervector.png";
-import removeBg from "../../assets/images/removeBG.png";
+import removeBg from "../../assets/images/heroProfilepng.png";
 import '../carousel/carousel.css';
 
 export default function carousel() {

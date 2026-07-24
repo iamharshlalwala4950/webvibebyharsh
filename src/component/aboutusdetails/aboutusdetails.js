@@ -38,7 +38,7 @@ export default function aboutusdetails() {
                                 </div>
 
                                 <div className="buttonSection">
-                                    <a href="https://drive.google.com/file/d/1THAQjPUHFKY2tcv8K2SJg_a8-O82QSCT/" rel="noreferrer" target="_blank">
+                                    <a href="https://drive.google.com/file/d/1THAQjPUHFKY2tcv8K2SJg_a8-O82QSCT/view" rel="noreferrer" target="_blank">
                                         Get My Resume <i className="fas fa-arrow-up"></i>
                                         <div className="ButtonBar"></div>
                                     </a>

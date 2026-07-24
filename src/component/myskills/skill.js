@@ -14,9 +14,9 @@ export default function skill() {
     const skills = [
         {
             id: 1,
-            title: "React",
+            title: "React.js",
             SkillImage: react,
-            alt: "React",
+            alt: "React.js",
         },
         {
             id: 2,
