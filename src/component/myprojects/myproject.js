@@ -1,5 +1,6 @@
 import React from 'react'
 import './myproject.css';
+import KomalParkConnect from "../../assets/images/projectsHome/komal-park-connect.png";
 import ISInstrutechSolution from "../../assets/images/projectsHome/IS.png";
 import Firesafeservices from "../../assets/images/projectsHome/firesafeservice.png";
 import onyxpigment from "../../assets/images/projectsHome/OnyxPigment.png";
@@ -13,6 +14,14 @@ export default function myproject() {
     const projects = [
         {
             id: 1,
+            projectIndustry: "Residential Society Management & Community Portal",
+            projectName: "Komal Park Connect",
+            projectCoverImage: KomalParkConnect,
+            projectDiscription: "A modern residential society management portal developed to simplify community administration, member management, monthly collections, maintenance tracking, expenses, and financial records. The dashboard provides administrators with a centralized view of society activities and account logs. Built with a responsive and user-friendly interface for efficient day-to-day management. Developed using React.js, JavaScript, Bootstrap, CSS3, and Supabase for secure data management and authentication.",
+            projectURL: "https://komal-park-connect.vercel.app/"
+        },
+        {
+            id: 2,
             projectIndustry: "Process Instrumentation Industry",
             projectName: "IS Instrutech Solution Pvt. Ltd.",
             projectCoverImage: ISInstrutechSolution,
@@ -20,7 +29,7 @@ export default function myproject() {
             projectURL: "https://instrutechsolution.com/"
         },
         {
-            id: 2,
+            id: 3,
             projectIndustry: "Fire Protection Systems & Industrial Safety Solutions",
             projectName: "Jogi Firesafe Service PVT. LTD",
             projectCoverImage: Firesafeservices,
@@ -28,7 +37,7 @@ export default function myproject() {
             projectURL: "https://jogifiresafeservices.com/"
         },
         {
-            id: 3,
+            id: 4,
             projectIndustry: "Pigment Manufacturing Industry",
             projectName: "ONYX Pigment PVT. LTD.",
             projectCoverImage: onyxpigment,
@@ -36,7 +45,7 @@ export default function myproject() {
             projectURL: "https://onyxpigment.com/"
         },
         {
-            id: 4,
+            id: 5,
             projectIndustry: "Industrial Logistics & Chemical Equipment Industry",
             projectName: "Bulk Flo Agencies LLP",
             projectCoverImage: BulkFlo,
@@ -44,7 +53,7 @@ export default function myproject() {
             projectURL: "https://bulk-flo.com/"
         },
         {
-            id: 5,
+            id: 6,
             projectIndustry: "process safety Industry",
             projectName: "JOGI SafeTech PVT. LTD.",
             projectCoverImage: jogisafetech,
@@ -52,7 +61,7 @@ export default function myproject() {
             projectURL: "https://jogisafetech.com/"
         },
         {
-            id: 6,
+            id: 7,
             projectIndustry: "Textile Industry",
             projectName: "RJ Kapdaaz",
             projectCoverImage: RJKapdaaz,
@@ -60,7 +69,7 @@ export default function myproject() {
             projectURL: "https://rjkapdaaz.com/"
         },
         {
-            id: 7,
+            id: 8,
             projectIndustry: "Hospitality Industry",
             projectName: "Hotel Atlantic",
             projectCoverImage: atlanticHotel,
@@ -68,7 +77,7 @@ export default function myproject() {
             projectURL: "https://eweb247.com/AtlanticHotel/"
         },
         {
-            id: 8,
+            id: 9,
             projectIndustry: "Hospitality Industry",
             projectName: "Hotel Royal",
             projectCoverImage: hotelroyal,
