@@ -94,7 +94,10 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 991px) {
+    .mainHero img{
+            max-height: 400px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -156,7 +159,7 @@
     }
 
     .home-hero .carousel-item img.sliderImg {
-        height: 720px;
+        height: 720px !important;
         width: 100%;
     }
 
