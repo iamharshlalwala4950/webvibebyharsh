@@ -15,11 +15,6 @@ export default function Navbar() {
       setIsOpen((prev) => !prev);
    };
 
-   // Close Menu
-   const closeMenu = () => {
-      setIsOpen(false);
-   };
-
    // Smooth Scroll With Lenis & Header Offset
    // Smooth Scroll With Lenis & Header Offset
    const scrollToSection = (id) => {
