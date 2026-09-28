@@ -2,7 +2,21 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    scroll-behavior: smooth;
+}
+
+@media (pointer: fine) {
+  *,
+  *::before,
+  *::after,
+  html,
+  body,
+  a,
+  button,
+  input,
+  textarea,
+  [role="button"] {
+    cursor: none !important;
+  }
 }
 
 body {

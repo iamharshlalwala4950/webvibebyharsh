@@ -1,6 +1,4 @@
 .ContactSection {
-    /* background-image: url('../../assets/images/vector/footer.png');
-    background-position: right; */
     border-top: 1px solid #a3a3a34d;
 }
 
@@ -72,32 +70,4 @@
 
 .websiteSignature p {
     font-size: 18px;
-}
-
-.back-to-top {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    right: 15px;
-    bottom: 25px;
-    background: #fb4e4e;
-    color: #fff;
-    font-size: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    border: 1px solid #fb4e4e;
-    cursor: pointer;
-    z-index: 990;
-    opacity: 0;
-    transform: translateY(30px);
-    pointer-events: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.back-to-top.show {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
 }

@@ -1,39 +1,93 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 import "./footer.css";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Footer() {
-    const [showButton, setShowButton] = useState(false);
+    const containerRef = useRef(null);
+    const emailBtnRef = useRef(null);
 
-    // Show / hide on scroll
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 200) {
-                setShowButton(true);
-            } else {
-                setShowButton(false);
-            }
-        };
+    // GSAP ScrollTrigger entré-animation
+    useGSAP(
+        () => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".ContactSection",
+                    start: "top 80%",
+                    toggleActions: "play none none reverse",
+                },
+                defaults: { ease: "power3.out" },
+            });
 
-        window.addEventListener("scroll", handleScroll);
+            tl.fromTo(
+                ".ContactSection .headingSection h1",
+                { y: 40, opacity: 0 },
+                { y: 0, opacity: 1, duration: 0.8 }
+            )
+                .fromTo(
+                    ".communicationBar a",
+                    { y: 30, opacity: 0, scale: 0.95 },
+                    { y: 0, opacity: 1, scale: 1, duration: 0.6, ease: "back.out(1.4)" },
+                    "-=0.4"
+                )
+                .fromTo(
+                    ".mysocials a, .circle-link-separator",
+                    { y: 20, opacity: 0 },
+                    {
+                        y: 0,
+                        opacity: 1,
+                        duration: 0.5,
+                        stagger: 0.06,
+                        ease: "power2.out",
+                    },
+                    "-=0.3"
+                )
+                .fromTo(
+                    ".websiteSignature p",
+                    { opacity: 0 },
+                    { opacity: 1, duration: 0.6 },
+                    "-=0.2"
+                );
+        },
+        { scope: containerRef }
+    );
 
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    // Magnetisk hover-effekt på e-mail knappen
+    const handleEmailMouseMove = (e) => {
+        const btn = emailBtnRef.current;
+        if (!btn || window.innerWidth < 768) return;
 
-    // Smooth scroll
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        gsap.to(btn, {
+            x: x * 0.25,
+            y: y * 0.25,
+            duration: 0.3,
+            ease: "power2.out",
+            overwrite: "auto",
         });
     };
 
-    // Dynamic Year
+    const handleEmailMouseLeave = () => {
+        if (!emailBtnRef.current) return;
+        gsap.to(emailBtnRef.current, {
+            x: 0,
+            y: 0,
+            duration: 0.6,
+            ease: "elastic.out(1, 0.4)",
+            overwrite: "auto",
+        });
+    };
+
     const currentYear = new Date().getFullYear();
 
     return (
-        <>
+        <div ref={containerRef}>
             <footer className="ContactSection section-gap1" id="ContactUs">
                 <div className="WrapperContainer">
                     <div className="container-fluid">
@@ -48,13 +102,23 @@ export default function Footer() {
                         <div className="row">
                             <div className="col-12 text-center">
                                 <div className="communicationBar">
-                                    <a href="mailto:hlalwala4950@gmail.com">
+                                    <a
+                                        ref={emailBtnRef}
+                                        href="mailto:hlalwala4950@gmail.com"
+                                        onMouseMove={handleEmailMouseMove}
+                                        onMouseLeave={handleEmailMouseLeave}
+                                        style={{ display: "inline-block" }}
+                                    >
                                         hlalwala4950@gmail.com
                                     </a>
                                 </div>
 
                                 <div className="mysocials">
-                                    <a href="https://www.linkedin.com/in/harsh-lalwala/" target="_blank" rel="noreferrer">
+                                    <a
+                                        href="https://www.linkedin.com/in/harsh-lalwala/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
                                         LinkedIn
                                     </a>
                                     <div className="circle-link-separator"></div>
@@ -65,9 +129,7 @@ export default function Footer() {
                                     >
                                         Whatsapp
                                     </a>
-
                                     <div className="circle-link-separator"></div>
-
                                     <a
                                         href="https://www.instagram.com/iamharshlalwala/"
                                         target="_blank"
@@ -75,9 +137,7 @@ export default function Footer() {
                                     >
                                         Instagram
                                     </a>
-
                                     <div className="circle-link-separator"></div>
-
                                     <a
                                         href="https://www.facebook.com/profile.php?id=100011258599105"
                                         target="_blank"
@@ -101,14 +161,6 @@ export default function Footer() {
                     </div>
                 </div>
             </footer>
-
-            {/* Back To Top Button */}
-            <div
-                className={`back-to-top ${showButton ? "show" : ""}`}
-                onClick={scrollToTop}
-            >
-                <i className="fas fa-angle-up"></i>
-            </div>
-        </>
+        </div>
     );
 }

@@ -1,0 +1,39 @@
+/* Hide on mobile / touch screen environments */
+@media (pointer: coarse) {
+  .custom-cursor-dot,
+  .custom-cursor-ring {
+    display: none !important;
+  }
+}
+
+/* Primary Fast-response Inner Dot */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background-color: #fb4e4e;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999999;
+  box-shadow: 0 0 10px rgba(251, 78, 78, 0.8);
+  will-change: transform, opacity;
+}
+
+/* Ambient Floating Ring Follower */
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999998;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  will-change: transform, opacity, border-color, background-color;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+}

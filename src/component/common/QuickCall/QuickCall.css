@@ -1,0 +1,114 @@
+.quickCallBtn {
+  position: fixed;
+  left: 25px;
+  bottom: 30px;
+  height: 54px;
+  width: auto;
+  min-width: 54px;
+  max-width: 54px; /* Controlled via GSAP */
+  border-radius: 50px;
+  background: #121819;
+  border: 1px solid #233033;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.75), 0 0 15px rgba(251, 78, 78, 0.15);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 99999;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  padding: 0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  will-change: max-width, padding-right;
+}
+
+.quickCallBtn:hover {
+  border-color: #fb4e4e;
+  background: #162022;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.9), 0 0 25px rgba(251, 78, 78, 0.35);
+}
+
+/* Pulsing Radar Ring */
+.callAuraRing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(251, 78, 78, 0.6);
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* Handset Icon Box */
+.callIconWrap {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fb4e4e;
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.quickCallBtn:hover .callIconWrap {
+  color: #ffffff;
+}
+
+/* Clipping mask that expands horizontally */
+.callTextMask {
+  max-width: 0px;
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  will-change: max-width, opacity;
+}
+
+/* Typography styling for phone digits */
+.callTextNumber {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+  padding-left: 4px;
+  will-change: transform, opacity, filter;
+}
+
+/* Mobile & Tablet Safe Defaults */
+@media (max-width: 767px) {
+  .quickCallBtn {
+    left: 18px;
+    bottom: 20px;
+    height: 48px;
+    min-width: 48px;
+    max-width: 48px !important;
+    padding-right: 0 !important;
+  }
+
+  .callAuraRing {
+    width: 48px;
+    height: 48px;
+  }
+
+  .callIconWrap {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    font-size: 15px;
+  }
+
+  .callTextMask {
+    display: none !important;
+  }
+}

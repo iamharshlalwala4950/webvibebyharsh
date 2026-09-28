@@ -1,0 +1,90 @@
+.backToTopProgress {
+  position: fixed;
+  right: 25px;
+  bottom: 30px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #121819;
+  border: 1px solid #233033;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.75), 0 0 15px rgba(251, 78, 78, 0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  outline: none;
+  user-select: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.backToTopProgress:hover {
+  border-color: #fb4e4e;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.9), 0 0 25px rgba(251, 78, 78, 0.35);
+}
+
+/* SVG Progress Ring */
+.progressRing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg); /* Start progress at top (12 o'clock) */
+  pointer-events: none;
+}
+
+.progressRingTrack {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 2.5;
+}
+
+.progressRingBar {
+  fill: none;
+  stroke: #fb4e4e;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  transition: stroke 0.3s ease;
+}
+
+.backToTopProgress:hover .progressRingBar {
+  stroke: #f4ac2c; /* Shifts to amber gold on hover */
+}
+
+/* Center Arrow */
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 15px;
+  pointer-events: none;
+}
+
+.arrowContainer i {
+  transition: color 0.3s ease;
+}
+
+.backToTopProgress:hover .arrowContainer i {
+  color: #fb4e4e;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+  .backToTopProgress {
+    right: 18px;
+    bottom: 20px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .progressRing {
+    width: 48px;
+    height: 48px;
+    transform: scale(0.85) rotate(-90deg);
+    transform-origin: center;
+  }
+
+  .arrowContainer {
+    font-size: 13px;
+  }
+}

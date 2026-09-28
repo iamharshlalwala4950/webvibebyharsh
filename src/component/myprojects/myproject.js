@@ -1,5 +1,10 @@
-import React from 'react'
-import './myproject.css';
+import React, { useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import "./myproject.css";
+
+import drSunnyGupta from "../../assets/images/projectsHome/Drsunnygupta.png";
 import KomalParkConnect from "../../assets/images/projectsHome/komal-park-connect.png";
 import ISInstrutechSolution from "../../assets/images/projectsHome/IS.png";
 import Firesafeservices from "../../assets/images/projectsHome/firesafeservice.png";
@@ -10,137 +15,217 @@ import RJKapdaaz from "../../assets/images/projectsHome/RJKapdaaz.png";
 import atlanticHotel from "../../assets/images/projectsHome/atlanticHotel.png";
 import hotelroyal from "../../assets/images/projectsHome/hotelroyal.png";
 
-export default function myproject() {
-    const projects = [
-        {
-            id: 1,
-            projectIndustry: "Residential Society Management & Community Portal",
-            projectName: "Komal Park Connect",
-            projectCoverImage: KomalParkConnect,
-            projectDiscription: "A modern residential society management portal developed to simplify community administration, member management, monthly collections, maintenance tracking, expenses, and financial records. The dashboard provides administrators with a centralized view of society activities and account logs. Built with a responsive and user-friendly interface for efficient day-to-day management. Developed using React.js, JavaScript, Bootstrap, CSS3, and Supabase for secure data management and authentication.",
-            projectURL: "https://komal-park-connect.vercel.app/"
-        },
-        {
-            id: 2,
-            projectIndustry: "Process Instrumentation Industry",
-            projectName: "IS Instrutech Solution Pvt. Ltd.",
-            projectCoverImage: ISInstrutechSolution,
-            projectDiscription: "Developed a responsive corporate website for IS Instrutech Solution Pvt. Ltd., showcasing industrial automation, instrumentation products, engineering services, and project portfolios with an SEO-optimized architecture and user-friendly navigation",
-            projectURL: "https://instrutechsolution.com/"
-        },
-        {
-            id: 3,
-            projectIndustry: "Fire Protection Systems & Industrial Safety Solutions",
-            projectName: "Jogi Firesafe Service PVT. LTD",
-            projectCoverImage: Firesafeservices,
-            projectDiscription: "Developed a responsive corporate website for Jogi Firesafe Service Pvt. Ltd., showcasing fire protection systems, industrial safety solutions, and engineering services with a modern UI, SEO-friendly architecture, and an intuitive user experience.",
-            projectURL: "https://jogifiresafeservices.com/"
-        },
-        {
-            id: 4,
-            projectIndustry: "Pigment Manufacturing Industry",
-            projectName: "ONYX Pigment PVT. LTD.",
-            projectCoverImage: onyxpigment,
-            projectDiscription: "A corporate website developed for a leading pigment manufacturer based in Gujarat, India. The website presents product information with a structured, professional layout focused on clarity, global reach, and credibility. Built to be responsive and SEO-ready, it supports international visibility while reflecting the company’s ISO and Chemexcil certifications.",
-            projectURL: "https://onyxpigment.com/"
-        },
-        {
-            id: 5,
-            projectIndustry: "Industrial Logistics & Chemical Equipment Industry",
-            projectName: "Bulk Flo Agencies LLP",
-            projectCoverImage: BulkFlo,
-            projectDiscription: "A business-focused website developed for a company specializing in spare parts for ISO tanks used in global logistics and chemical transportation. The website clearly presents product offerings, industry expertise, and safety-focused solutions. Designed for performance, accessibility, and clarity, it supports compliance-driven industries and strengthens trust with global clients.",
-            projectURL: "https://bulk-flo.com/"
-        },
-        {
-            id: 6,
-            projectIndustry: "process safety Industry",
-            projectName: "JOGI SafeTech PVT. LTD.",
-            projectCoverImage: jogisafetech,
-            projectDiscription: "A professional process safety website built to highlight the company’s commitment to safety, compliance, and operational efficiency. The website features a clean, structured layout with clear navigation for quick access to critical information. Designed to be fast and mobile-friendly, it delivers a smooth and reliable user experience across all devices while reinforcing trust and credibility.",
-            projectURL: "https://jogisafetech.com/"
-        },
-        {
-            id: 7,
-            projectIndustry: "Textile Industry",
-            projectName: "RJ Kapdaaz",
-            projectCoverImage: RJKapdaaz,
-            projectDiscription: "A modern textile business website created to showcase high-quality linen and uniform products with clarity and professionalism. The website emphasizes quality, affordability, and timely delivery while catering to hospitality and corporate clients. Built with a responsive and performance-focused layout, it ensures seamless browsing across all devices and strengthens brand reliability.",
-            projectURL: "https://rjkapdaaz.com/"
-        },
-        {
-            id: 8,
-            projectIndustry: "Hospitality Industry",
-            projectName: "Hotel Atlantic",
-            projectCoverImage: atlanticHotel,
-            projectDiscription: "A sleek and modern hospitality website template designed to create a refined digital presence for hotels. The layout highlights services and amenities with elegance and simplicity. Built for speed and mobile responsiveness, the template delivers a smooth browsing experience and has been successfully used by multiple hospitality clients.",
-            projectURL: "https://eweb247.com/AtlanticHotel/"
-        },
-        {
-            id: 9,
-            projectIndustry: "Hospitality Industry",
-            projectName: "Hotel Royal",
-            projectCoverImage: hotelroyal,
-            projectDiscription: "A sophisticated multi-property hotel website template designed for hotel chains and group properties. The website maintains a consistent brand identity while allowing each property to showcase its unique offerings. Fully responsive and performance-optimized, it provides a seamless user experience and has been adopted by several hospitality businesses to enhance their online presence.",
-            projectURL: "https://eweb247.com/HotelRoyal/"
-        },
-    ];
-    return (
-        <>
-            <section className="MyProjects section-gap" id="workMe">
-                <div className="WrapperContainer">
-                    <div className="container-fluid">
+gsap.registerPlugin(ScrollTrigger);
 
-                        <div className="row">
-                            <div className="col-12 headingSection">
-                                <h2>Web Wonders I've Built</h2>
-                                <div className="headingBar"></div>
-                                <label>Projects</label>
-                            </div>
-                        </div>
-                        <div className="row">
-                            {projects.map((project) => (
-                                <div className="col-md-12 ProjectCard" key={project.id}>
-                                    <div className="row">
-                                        <div className="col-lg-6">
-                                            <div className="projectImage">
-                                                <img
-                                                    src={project.projectCoverImage}
-                                                    alt={`${project.projectName}`}
-                                                    className="img-fluid"
-                                                    loading="lazy"
-                                                />
-                                            </div>
-                                        </div>
+export default function Myproject() {
+  const containerRef = useRef(null);
 
-                                        <div className="col-lg-6">
-                                            <div className="projectDetails">
-                                                <h5>#{project.projectIndustry}</h5>
-                                                <h3>{project.projectName}</h3>
-                                                <p>{project.projectDiscription}</p>
+  const projects = [
+    {
+      id: 1,
+      projectIndustry: "Healthcare & Clinical Nutrition",
+      projectName: "Dr. Sunny Gupta",
+      projectCoverImage: drSunnyGupta,
+      projectDiscription:
+        "A modern, high-performance professional website developed for Dr. Sunny Gupta, a Clinical Dietitian and Metabolic Expert. Built with React.js, JavaScript, and Bootstrap, featuring smooth interactive visual experiences powered by the GSAP Animation Library. The platform is fully responsive, optimized for search engines (SEO), and integrated with Google Analytics for tracking user engagement and reach.",
+      projectURL: "https://drsunnygupta.in/",
+    },
+    {
+      id: 2,
+      projectIndustry: "Residential Society Management & Community Portal",
+      projectName: "Komal Park Connect",
+      projectCoverImage: KomalParkConnect,
+      projectDiscription:
+        "A modern residential society management portal developed to simplify community administration, member management, monthly collections, maintenance tracking, expenses, and financial records. The dashboard provides administrators with a centralized view of society activities and account logs. Built with a responsive and user-friendly interface for efficient day-to-day management. Developed using React.js, JavaScript, Bootstrap, CSS3, and Supabase for secure data management and authentication.",
+      projectURL: "https://komal-park-connect.vercel.app/",
+    },
+    {
+      id: 3,
+      projectIndustry: "Process Instrumentation Industry",
+      projectName: "IS Instrutech Solution Pvt. Ltd.",
+      projectCoverImage: ISInstrutechSolution,
+      projectDiscription:
+        "Developed a responsive corporate website for IS Instrutech Solution Pvt. Ltd., showcasing industrial automation, instrumentation products, engineering services, and project portfolios with an SEO-optimized architecture and user-friendly navigation",
+      projectURL: "https://instrutechsolution.com/",
+    },
+    {
+      id: 4,
+      projectIndustry: "Fire Protection Systems & Industrial Safety Solutions",
+      projectName: "Jogi Firesafe Service PVT. LTD",
+      projectCoverImage: Firesafeservices,
+      projectDiscription:
+        "Developed a responsive corporate website for Jogi Firesafe Service Pvt. Ltd., showcasing fire protection systems, industrial safety solutions, and engineering services with a modern UI, SEO-friendly architecture, and an intuitive user experience.",
+      projectURL: "https://jogifiresafeservices.com/",
+    },
+    {
+      id: 5,
+      projectIndustry: "Pigment Manufacturing Industry",
+      projectName: "ONYX Pigment PVT. LTD.",
+      projectCoverImage: onyxpigment,
+      projectDiscription:
+        "A corporate website developed for a leading pigment manufacturer based in Gujarat, India. The website presents product information with a structured, professional layout focused on clarity, global reach, and credibility. Built to be responsive and SEO-ready, it supports international visibility while reflecting the company’s ISO and Chemexcil certifications.",
+      projectURL: "https://onyxpigment.com/",
+    },
+    {
+      id: 6,
+      projectIndustry: "Industrial Logistics & Chemical Equipment Industry",
+      projectName: "Bulk Flo Agencies LLP",
+      projectCoverImage: BulkFlo,
+      projectDiscription:
+        "A business-focused website developed for a company specializing in spare parts for ISO tanks used in global logistics and chemical transportation. The website clearly presents product offerings, industry expertise, and safety-focused solutions. Designed for performance, accessibility, and clarity, it supports compliance-driven industries and strengthens trust with global clients.",
+      projectURL: "https://bulk-flo.com/",
+    },
+    {
+      id: 7,
+      projectIndustry: "process safety Industry",
+      projectName: "JOGI SafeTech PVT. LTD.",
+      projectCoverImage: jogisafetech,
+      projectDiscription:
+        "A professional process safety website built to highlight the company’s commitment to safety, compliance, and operational efficiency. The website features a clean, structured layout with clear navigation for quick access to critical information. Designed to be fast and mobile-friendly, it delivers a smooth and reliable user experience across all devices while reinforcing trust and credibility.",
+      projectURL: "https://jogisafetech.com/",
+    },
+    {
+      id: 8,
+      projectIndustry: "Textile Industry",
+      projectName: "RJ Kapdaaz",
+      projectCoverImage: RJKapdaaz,
+      projectDiscription:
+        "A modern textile business website created to showcase high-quality linen and uniform products with clarity and professionalism. The website emphasizes quality, affordability, and timely delivery while catering to hospitality and corporate clients. Built with a responsive and performance-focused layout, it ensures seamless browsing across all devices and strengthens brand reliability.",
+      projectURL: "https://rjkapdaaz.com/",
+    },
+    {
+      id: 9,
+      projectIndustry: "Hospitality Industry",
+      projectName: "Hotel Atlantic",
+      projectCoverImage: atlanticHotel,
+      projectDiscription:
+        "A sleek and modern hospitality website template designed to create a refined digital presence for hotels. The layout highlights services and amenities with elegance and simplicity. Built for speed and mobile responsiveness, the template delivers a smooth browsing experience and has been successfully used by multiple hospitality clients.",
+      projectURL: "https://eweb247.com/AtlanticHotel/",
+    },
+    {
+      id: 10,
+      projectIndustry: "Hospitality Industry",
+      projectName: "Hotel Royal",
+      projectCoverImage: hotelroyal,
+      projectDiscription:
+        "A sophisticated multi-property hotel website template designed for hotel chains and group properties. The website maintains a consistent brand identity while allowing each property to showcase its unique offerings. Fully responsive and performance-optimized, it provides a seamless user experience and has been adopted by several hospitality businesses to enhance their online presence.",
+      projectURL: "https://eweb247.com/HotelRoyal/",
+    },
+  ];
 
-                                                <div className="buttonSection">
-                                                    <a
-                                                        href={project.projectURL}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                    >
-                                                        Discover More
-                                                        <i className="fas fa-arrow-up" aria-hidden="true"></i>
-                                                        <div className="ButtonBar"></div>
-                                                    </a>
-                                                </div>
+  useGSAP(
+    () => {
+      // 1. Heading Reveal
+      const headerTl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".MyProjects",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+        defaults: { ease: "power3.out" },
+      });
 
-                                            </div>
-                                        </div>
+      headerTl
+        .fromTo(
+          ".MyProjects .headingSection h2",
+          { y: 35, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.7 }
+        )
+        .fromTo(
+          ".MyProjects .headingBar",
+          { scaleX: 0, opacity: 0, transformOrigin: "left center" },
+          { scaleX: 1, opacity: 1, duration: 0.6 },
+          "-=0.4"
+        )
+        .fromTo(
+          ".MyProjects .headingSection label",
+          { x: 20, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.5 },
+          "-=0.4"
+        );
 
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+      // 2. Individual Card Entrance (Opaque, clean, solid)
+      const cards = gsap.utils.toArray(".ProjectCard");
+
+      cards.forEach((card) => {
+        gsap.fromTo(
+          card,
+          { y: 40, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.7,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 88%",
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
+      });
+    },
+    { scope: containerRef }
+  );
+
+  return (
+    <div ref={containerRef}>
+      <section className="MyProjects section-gap" id="workMe">
+        <div className="WrapperContainer">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-12 headingSection">
+                <h2>Web Wonders I've Built</h2>
+                <div className="headingBar"></div>
+                <label>Projects</label>
+              </div>
+            </div>
+
+            <div className="row">
+              {projects.map((project, index) => (
+                <div
+                  className="col-md-12 ProjectCard"
+                  key={project.id}
+                  style={{ zIndex: index + 1 }}
+                >
+                  <div className="row align-items-center">
+                    <div className="col-lg-6">
+                      <div className="projectImage">
+                        <img
+                          src={project.projectCoverImage}
+                          alt={`${project.projectName}`}
+                          className="img-fluid"
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
+
+                    <div className="col-lg-6">
+                      <div className="projectDetails">
+                        <h5>#{project.projectIndustry}</h5>
+                        <h3>{project.projectName}</h3>
+                        <p>{project.projectDiscription}</p>
+
+                        <div className="buttonSection">
+                          <a
+                            href={project.projectURL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Discover More
+                            <i className="fas fa-arrow-up" aria-hidden="true"></i>
+                            <div className="ButtonBar"></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </section>
-        </>
-    )
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
