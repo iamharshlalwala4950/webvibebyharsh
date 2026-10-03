@@ -6,6 +6,7 @@ import "./myproject.css";
 
 import drSunnyGupta from "../../assets/images/projectsHome/Drsunnygupta.png";
 import KomalParkConnect from "../../assets/images/projectsHome/komal-park-connect.png";
+import Chabildas from "../../assets/images/projectsHome/Chabildas.png";
 import ISInstrutechSolution from "../../assets/images/projectsHome/IS.png";
 import Firesafeservices from "../../assets/images/projectsHome/firesafeservice.png";
 import onyxpigment from "../../assets/images/projectsHome/OnyxPigment.png";
@@ -41,6 +42,15 @@ export default function Myproject() {
     },
     {
       id: 3,
+      projectIndustry: "Textile & Linen Supply",
+      projectName: "Chhabildas Enterprise",
+      projectCoverImage: Chabildas,
+      projectDiscription:
+        "A modern, responsive corporate website developed for Chhabildas Enterprise, a textile and linen supplier specializing in Home Linen, Hospital Linen, and Hotel Linen. Built with HTML, CSS, Bootstrap, JavaScript, Basic SEO and ASP.NET MVC Framework, the website features a clean product-focused interface designed to showcase the company’s diverse linen solutions. The platform is fully responsive, providing a seamless browsing experience across desktop, tablet, and mobile devices.",
+      projectURL: "https://www.chhabildasenterprise.com/",
+    },
+    {
+      id: 4,
       projectIndustry: "Process Instrumentation Industry",
       projectName: "IS Instrutech Solution Pvt. Ltd.",
       projectCoverImage: ISInstrutechSolution,
@@ -49,7 +59,7 @@ export default function Myproject() {
       projectURL: "https://instrutechsolution.com/",
     },
     {
-      id: 4,
+      id: 5,
       projectIndustry: "Fire Protection Systems & Industrial Safety Solutions",
       projectName: "Jogi Firesafe Service PVT. LTD",
       projectCoverImage: Firesafeservices,
@@ -58,7 +68,7 @@ export default function Myproject() {
       projectURL: "https://jogifiresafeservices.com/",
     },
     {
-      id: 5,
+      id: 6,
       projectIndustry: "Pigment Manufacturing Industry",
       projectName: "ONYX Pigment PVT. LTD.",
       projectCoverImage: onyxpigment,
@@ -67,7 +77,7 @@ export default function Myproject() {
       projectURL: "https://onyxpigment.com/",
     },
     {
-      id: 6,
+      id: 7,
       projectIndustry: "Industrial Logistics & Chemical Equipment Industry",
       projectName: "Bulk Flo Agencies LLP",
       projectCoverImage: BulkFlo,
@@ -76,7 +86,7 @@ export default function Myproject() {
       projectURL: "https://bulk-flo.com/",
     },
     {
-      id: 7,
+      id: 8,
       projectIndustry: "process safety Industry",
       projectName: "JOGI SafeTech PVT. LTD.",
       projectCoverImage: jogisafetech,
@@ -85,7 +95,7 @@ export default function Myproject() {
       projectURL: "https://jogisafetech.com/",
     },
     {
-      id: 8,
+      id: 9,
       projectIndustry: "Textile Industry",
       projectName: "RJ Kapdaaz",
       projectCoverImage: RJKapdaaz,
@@ -94,7 +104,7 @@ export default function Myproject() {
       projectURL: "https://rjkapdaaz.com/",
     },
     {
-      id: 9,
+      id: 10,
       projectIndustry: "Hospitality Industry",
       projectName: "Hotel Atlantic",
       projectCoverImage: atlanticHotel,
@@ -103,7 +113,7 @@ export default function Myproject() {
       projectURL: "https://eweb247.com/AtlanticHotel/",
     },
     {
-      id: 10,
+      id: 11,
       projectIndustry: "Hospitality Industry",
       projectName: "Hotel Royal",
       projectCoverImage: hotelroyal,
